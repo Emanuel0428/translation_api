@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traductor de archivos</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Traductor de archivos!</h1>
+    <form action="/translate" method="post" enctype="multipart/form-data">
+        <label for="file">Seleccione un archivo PDF o DOCX:</label>
+        <input type="file" id="file" name="file" accept=".pdf,.docx" required>
+
+        <label for="src_lang">Idioma de origen:</label>
+        <select id="src_lang" name="src_lang" required>
+            <option value="auto">Detectar automáticamente</option>
+            <option value="en">Inglés</option>
+            <option value="es">Español</option>
+            <option value="fr">Francés</option>
+            <option value="de">Alemán</option>
+        </select>
+
+        <label for="dest_lang">Idioma de destino:</label>
+        <select id="dest_lang" name="dest_lang" required>
+            <option value="en">Inglés</option>
+            <option value="es">Español</option>
+            <option value="fr">Francés</option>
+            <option value="de">Alemán</option>
+        </select>
+        <button type="submit">Traducir</button>
+    </form>
+</div>
+</body>
+</html>
