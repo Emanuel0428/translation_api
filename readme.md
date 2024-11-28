@@ -71,4 +71,7 @@ Este proyecto consiste en una API REST construida con **FastAPI** que permite tr
 
    Después de realizar la traducción, el archivo traducido estará disponible para su descarga.
 
+## Aspectos a mejorar y en desarrollo
+
+Mantener el formato original y realizar la traducción conservando los elementos esteticos (muy pronto)...
 
